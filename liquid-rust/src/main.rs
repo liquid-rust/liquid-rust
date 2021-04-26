@@ -14,6 +14,8 @@ fn main() {
     // Add the sysroot path to the arguments.
     args.push("--sysroot".into());
     args.push(sysroot().expect("Liquid Rust requires rustup to be built."));
+    // Record nll-facts for this compilation.
+    args.push("-Znll-facts".into());
     // Add release mode to the arguments.
     args.push("-O".into());
     // Run the rust compiler with the arguments.

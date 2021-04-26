@@ -10,6 +10,7 @@ macro_rules! pass_test {
 
             liquid_rust_driver::run_compiler(vec![
                 "whatever".into(),
+                "-Znll-facts".into(),
                 path.into(),
                 sysroot.into(),
                 "--crate-type=lib".into(),

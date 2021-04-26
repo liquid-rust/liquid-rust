@@ -12,8 +12,14 @@ liquid-rust-lrir = { path = "../liquid-rust-lrir" }
 liquid-rust-parser = { path = "../liquid-rust-parser" }
 liquid-rust-typeck = { path = "../liquid-rust-typeck" }
 
+csv = "1.1.6"
+hashconsing = "1.3"
+lazy_static = "1.4.0"
+polonius-engine = "0.12.1"
 quickscope = "0.1.6"
+regex = "1.4.5"
 rustc-workspace-hack = "1.0.0"
+serde = "1"
 
 [package.metadata.rust-analyzer]
 rustc_private = true
